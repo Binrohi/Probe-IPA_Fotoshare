@@ -89,6 +89,10 @@ public class Main {
                         System.out.println("Username: " + users.get(index).getName());
                         System.out.println("Email: " + users.get(index).getEmail());
                         System.out.println("Profile picture:" + users.get(index).getProfilePicture());
+                        System.out.println("Account pictures:\n");
+                        for(Picture pictur: users.get(index).showPictures()){
+                            System.out.println(pictur.getPath());
+                        }
                     }
                     break;
                 case 5:
